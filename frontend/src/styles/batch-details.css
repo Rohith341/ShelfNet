@@ -1,0 +1,186 @@
+/* Batch Details Container */
+.batch-details-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.batch-details-container h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.batch-details-container h2 {
+  color: #444;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  font-size: 1.3rem;
+}
+
+/* Info Grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.info-card {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #2196F3;
+}
+
+.info-card label {
+  display: block;
+  font-size: 0.85rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.info-card .value {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.info-card .status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.info-card .status.active {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.info-card .status.pending {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.info-card .status.closed {
+  background: #f3e5f5;
+  color: #6a1b9a;
+}
+
+.info-card .shelf-life {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.info-card .shelf-life.green {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.info-card .shelf-life.orange {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.info-card .shelf-life.red {
+  background: #ffebee;
+  color: #c62828;
+}
+
+/* Actions Container */
+.actions-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background: #2196F3;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1976D2;
+}
+
+.btn-success {
+  background: #4CAF50;
+  color: white;
+}
+
+.btn-success:hover {
+  background: #388E3C;
+}
+
+.btn-danger {
+  background: #F44336;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #D32F2F;
+}
+
+.btn-secondary {
+  background: #9E9E9E;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #757575;
+}
+
+.btn-warning {
+  background: #FF9800;
+  color: white;
+}
+
+.btn-warning:hover {
+  background: #F57C00;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .batch-details-container {
+    padding: 10px;
+  }
+
+  .actions-container {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
